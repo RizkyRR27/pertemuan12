@@ -11,7 +11,7 @@ class User {
     required this.createdAt,
   });
 
-  // Konversi dari JSON ke Object Dart
+  //konversi JSON ke object dart
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       id: json['id'],
@@ -21,7 +21,7 @@ class User {
     );
   }
 
-  // Konversi dari Object Dart ke JSON
+  //konversi object dart ke JSON
   Map<String, dynamic> toJson() {
     return {
       'id': id,
